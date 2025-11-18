@@ -8,12 +8,26 @@
     background-color: lighten($gris, 5);
     border: 1px solid darken($gris, 10);
     margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 
     .contenido-anuncio {
         padding: 2rem;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    .boton-amarillo-block{
+        margin-top: auto;
+        
     }
 
     h3, p {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3; // Número de líneas que quieres mostrar antes del "..."
+        overflow: hidden;
         margin: 0;
     }
  
@@ -28,9 +42,10 @@
     display: flex;
     list-style: none;
     padding: 0;
-    max-width: 40rem;
+    max-width: 100%;
 
     li {
+        margin-top: auto;
         flex: 1;
         display: flex;
 
@@ -39,6 +54,7 @@
             margin-right: 1rem;
         }
         p {
+            
             font-weight: $black;
         }
     }
