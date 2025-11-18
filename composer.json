@@ -1,0 +1,17 @@
+{
+    "name": "tomas/bienes-raices-php_inicio",
+    "description": "Creando u proyectyo con POO",
+    "type": "project",
+    "authors": [
+        {
+            "name": "TomasMiqueleiz02",
+            "email": "Tomasmiqueleiz02@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload":{
+        "psr-4": {
+            "App\\" : "./clases"
+        }
+    }
+}
