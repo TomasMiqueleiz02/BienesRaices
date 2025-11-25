@@ -1,8 +1,9 @@
 <?php
-if(!isset($_SESSION)){ //Revisamos si habia arrancado la sesion para que no haya duplicado
+// Evitar iniciar sesión duplicada; si no existe, iniciarla
+if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
-$auth =$_SESSION['login'] ?? false;
+$auth = $_SESSION['login'] ?? false;
 
 ?>
 
